@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type='text/javascript'>
+  function Person(first,last,age,gender,interests){
+  this.name = {
+      first : first,
+      second : last,
+      };
+  this.age = age,
+  this.gender = gender,
+  this.interests = interests
+  this.bio = function(){
+  let answear = '';
+  for(let a=0 ;a < this.interests.length;a++){
+    answear += (' ' + this.interests[a] + ',');
+    alert(answear);
+  }
+
+  };
+  }
+
+  newPerson0 = new Person('Oleg','Super',44,'male',['music', 'skiing','sport'])
+  </script>
+</body>
+</html>

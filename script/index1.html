@@ -1,0 +1,41 @@
+<!DOCTYPE html 5>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello</h1>
+<script type='text/javascript'>
+var oo = { [Symbol('foo')]: 2}
+var o1 = { a: 1 };
+var o2 = { b: 2 };
+var o3 = { c: 3 };
+
+var obj = Object.assign(oo, o1, o2, o3);
+console.log(obj); // { a: 1, b: 2, c: 3 }
+console.log(oo);  // { a: 1, b: 2, c: 3 },
+//замыкание в дж
+function t1(){
+let a = 0;
+return function()
+ {a = a + 1;
+  return a;}
+}
+let b = t1();
+//конец замыкания//теперь счетчик
+// а от функии Т1, будет защищен от изминения со стороны
+let c = t1();
+console.log(b());
+console.log(b());
+console.log(b());
+console.log(b());
+console.log(c());
+console.log(c());
+console.log(c());
+</script>
+</body>
+</html>

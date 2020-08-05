@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+function changeDisplay() {
+    var elem1 = document.getElementById("elem1");
+if (elem1.style.display == "none") {
+    elem1.style.display = "block";
+}
+else {
+    elem1.style.display = "none";
+}
+}
+function changeVisibility() {
+  var elem2 = document.getElementById("elem2");
+  if(elem2.style.visibility == "hidden") {
+    elem2.style.visibility = "visible";
+}
+else {
+    elem2.style.visibility = "hidden";
+}
+}
+
+
+
+</script>
+</head>
+<body>
+<div><a href=# onclick="changeDisplay(); return false">
+  щелкните на ссылку чтобы отобразить или скрыть абзац
+</a></div>
+<p id="elem1" style="display:none; background-color:silver">Скрытый абзац</p>
+<p>Демонстрация приминения атрибута display</p>
+<div><a href="#" onclick="changeVisibility(); return false">Щелкните чтобы отобразить или скрыть абзац</a></div>
+<p id ="elem2" style="visibility:hidden; background-color:silver">Скрытый абзац</p>
+<p>Демонстрация приминения атрибута visibility</p>
+<div class="out__ptint">
+  <<p class="perep1"></p>></p>
+</div>
+<div style="width: 200em; height:100em; overflow: hidden; resize: both">
+  блока в любом случае отображаются полосы прокрутки.
+  Размеры можно менять с помощью мыши, взявшись за маркер
+  в правом нижнем углу
+  </div>
+</script>
+</body>
+
+</html>

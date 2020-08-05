@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body onload="changeColor();">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+   Vel corporis fugiat officiis temporibus dignissimos consequuntur consequatur expedita odit illum hic deserunt,
+   assumenda, veritatis iure, tempora nostrum. Error officiis, eius similique.
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+   Eaque reiciendis nam hic, repellat, impedit laudantium beatae tempora dolorum optio pariatur perspiciatis quos.
+   Quaerat rem qui iure, corporis, debitis esse temporibus!
+ </p>
+ <p class="name">Andrey</p>
+ <div name="my_box">
+   <p>Hellow change color alw</p>
+   <button type="button" name="button" onclick="stopTextColor"></button>
+ </div>
+ <script type="text/javascript">
+ var nIntervId;
+
+  function changeColor() {
+    nIntervId = setInterval(flashText, 1000);
+  }
+
+  function flashText() {
+    var oElem = document.getElementById('my_box');
+    oElem.style.color = oElem.style.color == 'red' ? 'blue' : 'red';
+    // oElem.style.color == 'red' ? 'blue' : 'red' is a ternary operator.
+  }
+
+  function stopTextColor() {
+    clearInterval(nIntervId);
+  }
+   function abc(){
+     if (this.style.background =='red') {
+       this.style.background ='white';
+     }
+     else
+      this.style.background ='red'
+
+   }
+   let p = document.querySelectorAll('p');
+   p.forEach(function(element){
+   element.addEventListener('click',abc,false)
+   })
+
+
+   //конструктор для создания пользователей
+   function Person(first, last, age, gender, interests) {
+  this.name = {
+    first : first,
+    last: last
+  };
+  this.age = age;
+  this.gender = gender;
+  this.interests = interests;
+  this.bio = function() {
+    let answear ;
+    if(this.gender == 'male')
+    answear = this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. His likes ';
+    else (this.gender == 'famale')
+    answear = this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. She likes ';
+    for(let a=0 ; a<this.interests.length;a++){
+      answear += (' ' + this.interests[a] + ',');
+
+    }  alert(answear);
+
+  };
+  this.greeting = function() {
+    alert('Hi! I\'m ' + this.name.first + '.');
+  };
+  }
+
+  var person1 = new Person('Bob', 'Smith', 32, 'famale', ['music', 'skiing']);
+
+  var person2 = new Person('Andrey', 'Schupalenko',32,'male',['music', 'skiing','sport','sossat','drochit']);
+  var person3 = new Person('Alex','Svystun',32,'male',['Look internet','music','spoort','druugs']);
+ </script>
+</body>
+</html>

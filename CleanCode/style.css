@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed',sans-serif;
+}
+body {
+  margin-bottom: 50px;
+}
+main {
+  margin-bottom: 50px;
+  display: flex;
+  align-content: center;
+}
+h1{
+  font-size: 3em;
+  color: #e2c9af;
+  margin: auto;
+  opacity: 0.5;
+}
+
+nav {
+  display: inline;
+}
+
+header {
+  display: flex;
+  background: #000000;
+}
+main {
+  width: auto;
+  height: auto;
+}
+footer {
+  height: 50px;
+  background-color: pink;
+}
