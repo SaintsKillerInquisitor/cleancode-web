@@ -1,0 +1,72 @@
+body {
+  color: white;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+select {
+  background: black;
+  width: 200px;
+  height:26px;
+  }
+select option{
+  color :#fed92e;
+}
+input {
+  background: black;
+  padding-left: 11px;
+}
+#editor{
+  font-family: Verdana;
+   font-size: 12px;
+   background: black;
+   color: #feb92e;
+}
+.header {
+  background: black;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  background: black;
+  min-height: 500px;
+}
+.footer {
+  margin-top: 20px;
+  background: black;
+
+}
+.form {
+  width: 350px;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px white;
+  font-family: fantasy;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.form_input,
+.form_button {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin: 10px 0px 0px 0px;
+
+}
+.form_title {
+  text-align: center;
+  margin-bottom:0 0 32px 0;
+  font-weight: normal;
+}
+.form_group {
+  position: relative;
+  margin-bottom: 32px;
+}
+.form_label {
+  transition: 0.8s;
+  position: relative;
+  color: #feb92e;
+
+}
